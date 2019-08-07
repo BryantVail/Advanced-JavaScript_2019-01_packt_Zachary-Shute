@@ -1,0 +1,149 @@
+//intro to ECMA-Script-6
+
+    objectives: [
+        "Define the different scopes in JavaScript and Characterize variable declaration", 
+        "Simplify JavaScript object definitions",
+        "De-Structure objects & arrays, build classes & modules",
+        "Transpile JavaScript for compatibility",
+        "Compose iterators & generators"
+    ]
+
+//introduction: {
+
+    "1/m backbones of web dev",
+    {
+        "name": "information",
+        "information-list": [
+            {
+                "name":"birth",
+                "date": "1995", 
+                "notes":[
+                    {
+                        "browser":"netscape"
+                    },
+                ]
+            },
+            {
+                "author": "Brendan Eich",
+            },
+            {
+                "build-time":"10 days"
+            },
+            {
+
+            }
+        ]
+    }
+
+},
+
+BeginningWithECMAScript: {
+    emcaInternational is the entity that standardizes the language,
+    "ECMAScript-6 or "ES6", originally released in 2015 has gone through updates since birth",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources"
+},
+Understanding-Scope: {
+    "scope":
+        "region of a computer program where the binding or association of a name to an entity, such as a variable or function, is valid. JavaScript has the following two distinct types of scope",
+        notes: [
+            parent-scope: "the block of code, which the function is defined in; not the block of code in which the function is called"
+        ]
+    "function-scope":{
+        description: 
+            "
+        notes: [
+            "until ES6, was the only javascript scope there was",
+            "function declarations get 'hoisted' or shuffled to the top of the scope",
+            "'var' keyword must be used for 'hoisting'; function variables get hoisted",
+
+        ],
+        attributes: [
+            {
+                "name": "hoisting",
+                "description": "function declarations get 'hoisted' or shuffled to the top of the scope",
+                notes: [
+                    "'var' keyword must be used for hoisting",
+                    "function or variable can be used before it is declared",
+                    "be careful not to use the variable before its assigned a value; returns 'undefined'"
+                ]
+            },
+            {
+                "name": "
+            }
+        ]
+    },
+    "block-scope":{
+        description: 
+            "scope within brackets",
+        notes: [
+            "let & const are keywords associated with this addition to the language",
+            "created within any '{}' (curly braces); anywhere braces are declared, creates a new scope",
+            "examples: [if-statements, loops, functions]",
+            "no 'hoisting'",
+
+
+        ],
+        aspects: [
+            {
+                name: "Temporal-Dead-Zone",
+                description: "the period between when a scope is entered & when a variable is declared; ending when the variable is 'declared' rather than 'assigned'",
+                notes: [
+                    "variable accessed in the Temporal-Dead-Zone throws a 'runtime-error'; allows more robust code with fewer semantic errors from variable declaration",
+
+                ]
+            }
+        ]
+    }
+
+},
+Declaring-Variables: {
+
+    "differences between 3 declaration keywords are: reassignment, variable scope, & hoisting",
+    types: [
+        {
+            name: "var",
+            notes: [
+                "can be reassigned",
+                "function scope", 
+                "hoisted"
+            ]
+        },
+        {
+            name: "let",
+            notes: [
+                "can be reassigned",
+                "block-scope"
+
+            ]
+        },
+        {
+            name: "const",
+            notes: [
+                "always use const or let keywords",
+                "cannot be reassigned; TypeError will be thrown",
+                "Temporal-Dead-Zone susceptible",
+                "not hoisted", 
+                "not immutable",
+                "Arrays or 'objects' stored in a 'const' type variable- the  value of the variable CANNOT be overwritten",
+                "array 'content' or object 'PROPERTIES' can be changed; push(), pop(), map(), & object properties can be [added, removed, updated]. 
+            ]
+        }
+    ]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
